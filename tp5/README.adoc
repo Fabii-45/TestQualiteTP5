@@ -1,0 +1,25 @@
+= Tests applications web
+
+
+
+== Tests fonctionnels
+
+
+Avec Selenium, déterminez les différents scénarios permettant de valider l'application.
+
+
+
+== Tests structurels Struts
+
+
+Comme vu en cours, nous avons testé structurellement l'action *AjouterMatch*. Vous pouvez retrouver le code sur Célène. 
+
+
+
+Faites la même chose pour l'action *Parier*.
+
+N'oubliez pas les points importants :
+
+* Test structurel : donc couverture de tous les arcs à minima
+* Maîtrisez le test structurel struts : exécution des tests sans lancer de serveur
+* Utilisation de mocks car on reste sur du test structurel
