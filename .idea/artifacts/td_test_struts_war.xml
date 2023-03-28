@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="td-test-struts:war">
+    <output-path>$PROJECT_DIR$/tp5/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>td-test-struts</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="td-test-struts-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="td-test-struts:war exploded" />
+    </root>
+  </artifact>
+</component>

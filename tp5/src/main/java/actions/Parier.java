@@ -49,10 +49,6 @@ public class Parier extends Environnement {
     @Override
     public String execute() throws Exception {
         match = getFacade().getMatch(idMatch);
-        resultatsPossibles = new ArrayList<>();
-        resultatsPossibles.add("nul");
-        resultatsPossibles.add(match.getEquipe1());
-        resultatsPossibles.add(match.getEquipe2());
         if (montant<=0) {
             addFieldError("montant", "le montant doit être >0.");
             return INPUT;
@@ -61,6 +57,10 @@ public class Parier extends Environnement {
             addFieldError("idMatch", "match inexistant.");
             return INPUT;
         }
+        resultatsPossibles = new ArrayList<>();
+        resultatsPossibles.add("nul");
+        resultatsPossibles.add(match.getEquipe1());
+        resultatsPossibles.add(match.getEquipe2());
         long idPari = 0L;
         try {
             idPari = getFacade().parier(getUtilisateur().getLogin(), idMatch, resultat, montant);
